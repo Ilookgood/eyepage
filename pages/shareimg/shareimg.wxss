@@ -1,0 +1,36 @@
+/* pages/shareimg/shareimg.wxss */
+page{
+  background: linear-gradient(to top,  #F7A429,#FA025F );
+}
+.shareimg_img{
+  width: 550rpx;
+  height: 948rpx;
+  background: green;
+  margin: 0 auto;
+  margin-top: 46rpx;
+}
+.shareimg_img image{
+   width: 100%;
+  height: 100%;
+}
+.share_img_botton{
+  width: 351rpx;
+  height: 121rpx;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 38rpx;
+}
+.share_img_botton image{
+  width: 100%;
+  height: 100%;
+}
+.share_img_botton  text{
+  position: absolute;
+  left: 78%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 35rpx;
+  line-height: 121rpx;
+  width: 100%;
+}

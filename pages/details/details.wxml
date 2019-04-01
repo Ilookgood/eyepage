@@ -1,0 +1,59 @@
+<!--pages/details/details.wxml-->
+<view class='details_top'>
+    <image class='details_top_bg'></image>
+    <view class='details_top_text'>
+       <view class='details_top_text_left'><image></image></view>
+       <view class='details_top_text_right'>
+         <text>欧阳妮妮</text>
+         <text>广东  广州</text>
+       </view>
+    </view>
+    <view class='details_top_btn' bindtap='tobespokebox'>
+      <image src='{{noicon}}'></image>
+    </view>
+</view>
+<view class='topzhuan'>
+    <view class='topzhuan_left'>
+      <image src='../../img/max_in_icon.png'></image>
+      <text>8555</text>
+    </view>
+    <view class='topzhuan_right'>
+      <image src='../../img/max_kxin_icon.png'></image>
+      <text>1512</text>
+    </view>
+</view>
+<view class='topzhuan'>
+    <view class='topzhuan_name'>晓丹</view>
+    <view class='topzhuan_workplace'>职场女性</view>
+    <view class='Workplace_text'>长得好看，职场都会顺利几分</view>
+</view>
+<view class='max_share' bindtap='toshareimg'>
+  <image src='../../img/max_share_icon.png'></image>
+  <text>点击分享</text>
+  <!-- <button class='success_box_ok_bottom_fx' id="shareBtn" open-type="share" hover-class="other-button-hover">
+点击分享
+</button> -->
+</view>
+
+ <navigator class='activity' target="miniProgram" open-type="navigate" bindsuccess="app" bindfail="pdd" app-id="{{appId}}" path="" extra-data="{{upLoad}}" version="release">更多优惠活动等着你 ></navigator>
+<view class='details_bottom_box'>
+  <view> <image src=''></image> </view>
+  <view><image src=''> </image> </view>
+</view>
+<view class='bespoke_box' wx:if="{{figbesp==true}}">
+    <image class='bespoke_box_del' bindtap='del' src='../../img/del_icon.png'></image>
+    <view class='bespoke_box_text'>
+       <view class='bespoke_box_title'>点赞成功！</view>
+       <view class='bespoke_box_list'>
+          <text>恭喜你获得</text>
+          <text>皮肤补水护理一次</text>
+       </view>
+        <view  class='bespoke_box_text_b'>截图保存凭证有效</view>
+        <view class='bespoke_box_bnt' bindtap='towebview'>
+          <image src='../../img/bespoke_icon.png'></image>
+          <text >联系预约</text> 
+       
+        </view>
+    </view>
+    
+</view>

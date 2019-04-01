@@ -1,0 +1,41 @@
+/**app.wxss**/
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.clearfix:after{
+     content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;        
+}
+.clearfix:after{
+     content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;        
+
+}
+.clearfix{zoom:1}
+view,image{
+  margin: 0;
+  padding: 0
+}
+text{
+  font-family: PingFangSC-Light, sans-serif;
+}
+view{
+  font-family: PingFangSC-Light, sans-serif;
+}
+
+button::after{
+  border: none;
+}

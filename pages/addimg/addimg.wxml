@@ -1,0 +1,37 @@
+<!--pages/addimg/addimg.wxml-->
+<view class='addimg_box'>
+   <view class='tempFilePaths' wx:if="{{imgfig==true}}">
+      <view class='tempFilePaths_del' bindtap='tempFilePaths_del'>x</view>
+      <image src="{{tempFilePaths}}"></image>
+   </view>
+   <view class='addimg_img' bindtap='chooseImage' wx:if="{{adimg==true}}"><image src='../../img/addimg.png'></image></view>
+</view>
+<!-- 表单 -->
+  <form bindsubmit="saveData">
+<view class='addimg_form'>
+  <view class='addimg_form_list'>
+    <text>昵称 |</text>
+    <input name="name"  type='text'></input>
+  </view>
+  <view class='addimg_form_list'>
+    <text>电话 |</text>
+    <input maxlength="11" name="phone" type="number"></input>
+  </view>
+  <view class='addimg_form_list'>
+    <text>职业 |</text>
+    <input name="occupation" type='text'></input>
+  </view>
+  <view class='addimg_form_list'>
+    <text>变美宣言 |</text>
+    <input name="declarationv"  type='text'></input>
+  </view>
+ 
+</view>
+<view class='form_ok'>
+  <image src='../../img/form_ok.png'></image>
+  <!-- <text>点击提交</text> -->
+   <button formType="submit" disabled="{{disabled}}">
+     <text>点击提交</text>
+   </button>
+</view>
+ </form>

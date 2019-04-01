@@ -1,0 +1,2 @@
+<!--pages/webview/webview.wxml-->
+<web-view src="http://www.ruihanzx.com/swt/shangwutong.html#wxgzh"></web-view>

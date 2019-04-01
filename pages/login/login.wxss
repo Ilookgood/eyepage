@@ -1,0 +1,83 @@
+/* pages/login/login.wxss */
+.nousuenane{
+  width: 100%;
+  background: #000;
+  height: 100vh;
+  position: relative;
+}
+.nousuenane_box{
+  height:150rpx;
+position:absolute;
+left:50%;
+top:45%;
+transform:translate(-50%,-50%);
+line-height:60rpx;
+
+}
+.nousuenane_box text{
+  font-size: 40rpx;
+  color: #646464;
+  text-align: center;
+  width: 100%;
+  display: block;
+
+}
+.nousuenane_bnt{
+  position: fixed;
+  bottom: 15rpx;
+  background: transparent;
+  border: none;
+  color: #8D704E;
+  font-size: 40rpx;
+  text-align: center;
+  width: 100%;
+}
+
+
+.login_box{
+  padding: 0 50rpx;
+   background: #fff;
+   margin-top: 466rpx;
+}
+.login_img{
+  width: 140rpx;
+  height: 140rpx;
+  overflow: hidden;
+  border: 1px solid #646464;
+  border-radius: 100%;
+  margin: 0 auto;
+  
+
+}
+.login_img image{
+  width: 100%;
+  height: 100%;
+}
+.login_texg{
+  width: 100%;
+  margin-top: 370rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #646464;
+  display: block;
+  margin-bottom: 55rpx;
+  
+}
+.login_btn{
+  width: 100%;
+  height: 107rpx;
+  border-radius:8rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 107rpx;
+  margin-bottom: 45rpx;
+  background: #fff;
+  color: #646464;
+  font-family:PingFangSC-Light, sans-serif;
+
+
+}
+.login_box .login_btn_ok{
+  background: #2dae36;
+  color: #fff;
+}

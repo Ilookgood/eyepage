@@ -1,0 +1,192 @@
+<!--index.wxml-->
+<view class='index_top'>
+  <image class='index_top_bg' src='../../img/index_bg.png'></image>
+  <image class='index_top_pring' src='../../img/pring_img.png'></image>
+</view>
+
+<view class='index_list'>
+<!--top.wxml-->
+ <view class='index_list_top'>
+   <view class='index_list_top_left'>
+      <text>点赞排行</text>
+      <image src='../../img/icon_xin.png'></image>
+   </view>
+   <view class='index_list_top_right'>
+      <image src='../../img/bot_icon.png'></image>
+      <text>显示全部</text>
+   </view>
+ </view>
+ <!--end-->
+ <view class='img_list_box'>
+    <view class='img_list'>
+       <view class='img_list_prne'><image src='../../img/no1.png'></image></view>
+       <view class='img_list_miax'>
+          <view class='img_list_miax_img' bindtap='todetails'><image src='../../img/img.png'></image></view>
+          <view class='img_list_miax_bottom'>
+            <view class='img_list_miax_bottom_left'>安迪</view>
+            <view class='img_list_miax_bottom_right_box'>
+             <view class='img_list_miax_bottom_right_box_left'>
+               <image src='../../img/ln_icon.png'></image>
+               <text>720</text>
+             </view>
+             <view class='img_list_miax_bottom_right_box_right' bindtap=''>
+               <image src='../../img/kxin_icon.png'></image>
+               <!-- <image src='../../img/oktap_iocn.png'></image> -->
+               <text>185</text>
+             </view>
+            </view>
+             
+          </view>
+       </view>
+    </view>
+    <view class='img_list'>
+       <view class='img_list_prne_intli'><image src='../../img/to_icon.png'></image></view>
+       <view class='img_list_miax'>
+          <view class='img_list_miax_img'><image src='../../img/img.png'></image></view>
+          <view class='img_list_miax_bottom'>
+            <view class='img_list_miax_bottom_left'>安迪</view>
+            <view class='img_list_miax_bottom_right_box'>
+             <view class='img_list_miax_bottom_right_box_left'>
+               <image src='../../img/ln_icon.png'></image>
+               <text>720</text>
+             </view>
+             <view class='img_list_miax_bottom_right_box_right'>
+               <image src='../../img/kxin_icon.png'></image>
+               <text>185</text>
+             </view>
+            </view>
+             
+          </view>
+       </view>
+    </view>
+    
+ </view>
+
+</view>
+<!--end-->
+<view class='inbimt_box'>
+   <view class='inbimt_box_top clearfix'>
+      <view class='inbimt_box_top_left'>
+         <text>案例展示</text>
+         <image src='../../img/pick_icon.png'></image>
+      </view>
+      <image src='../../img/fege_icon.png' class='inbimt_box_left_img'></image>
+   </view>
+   <view class='inbimt_box_text'>
+     <view class='inbimt_box_text_noe'>Case Comparison</view>
+     <view class='inbimt_box_text_tow'>Before and after</view>
+   </view>
+   <swiper circular="circular" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+     <block wx:for="{{imgUrls}}">
+        <swiper-item>
+        <view class='inbimt_box_list'>
+            <view class='inbimt_box_list_left'><image src='../../img/left_icon.png'></image></view>
+            <view class='inbimt_box_list_img_box'>
+              <view class='inbimt_box_list_img rotated' >
+                <image src='{{item.bfimg}}'></image>
+              </view>
+              <view  class='inbimt_box_list_img rotatec'>
+                    <image src='{{item.img}}'></image>
+              </view>
+            </view>
+            <view class='inbimt_box_list_name'>
+              <text>{{item.name}}</text>
+            </view>
+            <view class='inbimt_box_list_text'>
+              <text>{{item.text}}</text>
+            </view>
+            <view class='inbimt_box_list_bnt' bindtap='tointroduils'>更多详情 > </view>
+            
+            <view class='inbimt_box_list_right'> <image src='../../img/right_icon.png'></image></view>
+        </view>
+        </swiper-item>
+    </block>
+   </swiper>
+</view>
+<!--end-->
+<view class='rule_box'>
+   <view class='rule_box_top'>
+     <view class='rule_box_top_left '> <text>活动规则</text><image src='../../img/rule_icon.png'></image> </view>
+     <view class='rule_box_top_right'>在线咨询 > </view>
+   </view>
+   <view class='rule_box_box'>
+     <view class='rule_box_box_list wx50'>
+        <view class='rule_box_box_list_title'>活动时间</view>
+        <view class='rule_box_box_list_text'>
+           <text>活动参与有效时间为</text>
+           <text class='bloint'>2019年3月1日-2019年3月31日</text>
+           <text>［截止于晚间12:00］</text>
+        </view>
+     </view>
+     <view class='rule_box_box_list wx50'>
+        <view class='rule_box_box_list_title'>参与方式</view>
+        <view class='rule_box_box_list_text'>
+           <text>点击 <text class='bloint'>“我要参与”</text></text>
+           <text>提交完整资料，即可参与活动</text>
+        </view>
+     </view>
+     <view class='rule_box_box_list wx100'>
+        <view class='rule_box_box_list_title'>抵扣规则</view>
+        <view class='rule_box_box_list_text'>
+           <text>未获得免费美眼名额的参与选手可通过点赞数抵扣对应项目现金</text>
+           <text  class='bloint'>1人仅限抵扣1次，不可重复抵扣</text>
+           <text class='mt10'>抵扣方式：<text class='bloint'>点击长按二维码，</text>凭活动个人详情页面截图信息在线预约</text>
+           <text>到院核实个人信息及点赞数即可参与抵扣活动</text>
+           <text class='mt10'>有效时间：<text class='bloint'>2019年3月1日-2019年3月31日</text> </text>
+        </view>
+     </view>
+     <view class='rule_box_box_list wx50'>
+        <view class='rule_box_box_list_title'>点赞规则</view>
+        <view class='rule_box_box_list_text'>
+           <text>本次活动采用<text class='bloint'>“一人一赞制”</text></text>
+           <text>如有任意不公平、不正当活动</text>
+           <text>参与行为，即刻取消参与资格</text>
+        </view>
+     </view>
+     <view class='rule_box_box_list wx50'>
+        <view class='rule_box_box_list_title'>活动公布</view>
+        <view class='rule_box_box_list_text'>
+           <text>活动入围名单信息将于</text>
+           <text><text class='bloint'>2019年4月1日</text>公布，敬请留意！</text>
+        </view>
+     </view>
+   </view>
+   <view class='reward_top'>
+        <view class='reward_top_left'>
+          <text>活动奖励</text>
+          <image src='../../img/xx_icon.png'></image>
+        </view>
+        <view class='reward_top_right'><image src='../../img/fege_icon.png'></image></view>
+     </view>
+       <view class='rule_box_box_list wx100'>
+        <view class='rule_box_box_list_title'>入围者奖励</view>
+        <view class='rule_box_box_list_text'>
+           <text class='linehe'>在活动预设的时间内，获得点赞数最高的前5名选手即可达成变美心愿，获得免费美眼名额；</text>
+        </view>
+     </view>
+     <view class='rule_box_box_list wx100'>
+        <view class='rule_box_box_list_title'>参与者奖励</view>
+        <view class='rule_box_box_list_text'>
+           <text>未获得免费名额的选手，可通过点赞数抵扣项目现金；</text>
+           <text>1个赞=10元（项目现金），适应于任何项目，最多可抵5000元；</text>
+        </view>
+     </view>
+     <view class='rule_box_box_list wx100'>
+        <view class='rule_box_box_list_title'>点赞者奖励</view>
+        <view class='rule_box_box_list_text'>
+           <text>凡参与活动的点赞者均可获得免费皮肤补水护理1次。</text>
+           <text>（可根据医院实际情况进行调整）</text>
+        </view>
+     </view>
+     <view class='alltext'>本活动最终解释权归瑞韩医疗美容医院所有</view>
+    
+</view>
+ <view class='index_bottom_btn'>
+   <view bindtap='toaddimg'> <image src='../../img/participate_icon.png'></image> <text>我要参与</text></view>
+  <button class='success_box_ok_bottom_fx' id="shareBtn" open-type="share" hover-class="other-button-hover">
+  <image src='../../img/share_icon.png'></image>
+<text>点击分享</text>
+</button>
+       <!-- <view><image src='../../img/share_icon.png'></image> <text>点击分享</text></view> -->
+     
+     </view>

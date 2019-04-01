@@ -1,0 +1,79 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.4",
+	"appid": "wx802ecbec5aa8b52b",
+	"projectname": "eyepage",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "details",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shareimg",
+					"pathName": "pages/shareimg/shareimg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "introducedetails",
+					"pathName": "pages/introducedetails/introducedetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addimg",
+					"pathName": "pages/addimg/addimg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"scene": null
+				}
+			]
+		}
+	}
+}

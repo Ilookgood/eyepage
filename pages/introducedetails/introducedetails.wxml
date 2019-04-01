@@ -1,0 +1,27 @@
+<!--pages/introducedetails/introducedetails.wxml-->
+<view class='details_top'>
+    <image class='details_top_bg'></image>
+    <view class='details_top_text'>
+       <view class='details_top_text_left'><image></image></view>
+       <view class='details_top_text_right'>
+         <text>欧阳妮妮</text>
+         <text>广东  广州</text>
+       </view>
+    </view>
+    <view class='details_top_btn' bindtap='tobespokebox'>
+      <text>整形项目  | 蒙娜丽莎美眼</text>
+    </view>
+</view>
+<view class='introducedetails_text'>
+   <text>我是一个普通的办公室白领，很多人以为做白领挺舒服的，其实都只是看到了光鲜亮丽的表象。现如今市场竞争这么激烈，稍有松懈就会被赶超。有时候觉得这种生活挺累的，可是为了生存没有办法，只有更努力才能让自己在这座城市之中立于不败之地。做整形，不是简单地让自己更好看，而是想让自己有更多选择的资本，有能力去做自己喜欢做的事。</text>
+</view>
+<view class='introduce_box'>
+   <view class='introduce_box_name'>Andy</view>
+   <view class='introduce_box_int'>90后 公司白领</view>
+   <view  class='introduce_box_text'>我只想变得更好，却不会像你们想象中的没有界限。</view>
+   <view class='introduce_box_textto'>不管是外表还是内在，我都会努力</view>
+</view>
+<view class='zj_icon_bnt' bindtap='towebview'>
+   <image src='../../img/zj_icon.png'></image>
+   <text>眼部专家 | 刘申松</text>
+</view>

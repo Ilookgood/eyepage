@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/details/details",
+    "pages/shareimg/shareimg",
+    "pages/introducedetails/introducedetails",
+    "pages/addimg/addimg",
+    "pages/webview/webview",
+    "pages/login/login"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "瑞韩整形",
+    "navigationBarTextStyle":"black"
+  },
+  "navigateToMiniProgramAppIdList":[
+    "wxf06eee0ac71fea24"
+  ]
+}

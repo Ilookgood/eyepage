@@ -1,0 +1,24 @@
+/* components/like/index.wxss */
+.content{
+  display: block;
+  height:36rpx;
+  line-height:36rpx;
+  float: right;
+  position: relative;
+  padding-left: 60rpx;
+
+}
+.content image{
+   width: 36rpx;
+   height: 31rpx;
+   position: absolute;
+   top: 6rpx;
+   left: 0;
+   vertical-align: middle;
+}
+.content text{
+  font-size: 24rpx;
+  color: #4A4A4A;
+  line-height: 36rpx;
+  display: inline-block;
+}

@@ -1,0 +1,11 @@
+<!--pages/shareimg/shareimg.wxml-->
+
+   <view class='shareimg_img'><image src='{{fximg}}'></image></view>
+
+   <view class='share_img_botton' bindtap='savePictures'>
+   <image src='../../img/max_participate_icon.png'></image>
+   <text>点击保存图片</text>
+   
+   </view>
+    <button type='primary' class='openSetting' open-type="openSetting" bindopensetting='handleSetting' hidden='{{openSettingBtnHidden}}'>去授权</button>
+

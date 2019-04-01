@@ -1,0 +1,92 @@
+/* pages/addimg/addimg.wxss */
+page{
+  background: #E6EAEE;
+}
+.addimg_box{
+  margin-top: 88rpx;
+  margin-bottom: 87rpx;
+  padding: 0 75rpx;
+}
+.addimg_img{
+  width: 481rpx;
+  height: 432rpx;
+  margin: 0 auto
+
+}
+.addimg_img image{
+  width: 100%;
+  height: 100%;
+}
+.addimg_form{
+  padding: 0 75rpx;
+}
+.addimg_form_list{
+  overflow: hidden;
+  height: 68rpx;
+  padding: 32rpx 35rpx;
+  background: #fff;
+  border-radius: 25rpx;
+  margin-bottom: 25rpx;
+}
+.addimg_form_list text{
+  float: left;
+  line-height: 68rpx;
+  font-size: 35rpx;
+  color: #808080;
+}
+.addimg_form_list input{
+  float: left;
+  line-height:68rpx;
+padding-left:10rpx;
+height:68rpx;
+
+}
+.form_ok{
+  width: 351rpx;
+  height: 121rpx;
+  line-height: 121rpx;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  margin-bottom: 127rpx;
+}
+.form_ok image{
+  width: 100%;
+  height: 100%;
+}
+.form_ok button{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 35rpx;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.tempFilePaths{
+  width:100%;
+  height: 500rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.tempFilePaths image{
+  width: 100%;
+  height: 100%;
+}
+.tempFilePaths_del{
+  position: absolute;
+  right: 25rpx;
+  top: 25rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100%;
+  background: rgba(250, 250, 250, .4);
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #000;
+  font-weight: bold;
+}

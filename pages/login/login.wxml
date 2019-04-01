@@ -1,0 +1,19 @@
+    <!--pages/login/login.wxml-->
+<!-- 登陆 -->
+<!-- <view class='nousuenane'>
+   <view class='nousuenane_box'>
+      <text class='nousuenane_w'>Unconventional</text>
+      <text class='nousuenane_t'>Marketing</text>
+      <text class='nousuenane_s'>冷门营销</text>
+   </view>
+    
+    <button class='nousuenane_bnt'  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">进 入</button>
+</view> -->
+<view class='login_box'>
+  <!-- <view class='login_img'>
+      <!-- <image src='../../image/login_icon.png'></image> 
+  </view> -->
+  <!-- <text class='login_texg'>允许微信登陆后，可体验更多功能</text> -->
+  <button class='login_btn login_btn_ok' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权微信登录</button>
+  <button class='login_btn' bindtap='backgo'>返回首页</button>
+</view>
